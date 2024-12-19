@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(229, 248, 243);
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 33%;
+    border-radius: 50%;
+    border: 2px solid rgb(4, 4, 4);
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.nav-list{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li{
+   list-style: none;
+   margin: 20px 30px; 
+   display: inline-block;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.nav-list a:hover{
+    color: aqua;
+}
+
+.rightNav{
+    width: 30%;
+    /* display: flex; */
+    justify-content: right;
+    align-items: center;
+    text-align: right;
+}
+
+#search{
+    font-size: 20px;
+    padding: 5px;
+    height: 60%;
+    width: 50%;
+    border: none;
+    border-radius: 20px;
+}
+
+.btn{
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 5px;
+}
+
+.background{
+    background: rgba(0,0,0,0.7) url("img40.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.firstSection{
+    height: 100vh;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    max-width: 50%;
+    margin: auto;
+    height: 60%;
+}
+
+.firstHalf{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.secondHalf img{
+    width: 80%;
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 150px;
+    border: 2px solid #fff;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.big-text{
+    font-size: 41px;
+}
+
+.small-text{
+    font-size: 18px;
+}
+
+.btns{
+    padding: 8px 20px;
+    margin: 7px;
+    border: 4px groove grey;
+    font-size: 18px;
+    border-radius: 8px;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.secRight{
+    /* height: 400px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: 10px auto;
+    font-family: "Playfair Display SC", serif;
+}
+
+.secLeft{
+    /* height: 400px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: 10px auto;
+    flex-direction: row-reverse;
+    font-family: "Playfair Display SC", serif;
+}
+
+.para{
+    padding: 60px;
+}
+
+.thumnail img{
+    width: 350px;
+    border-radius: 25px;
+    border: 3px solid rgb(7, 7, 7);
+}
+
+.Contact{
+    background-color: #fbf8ed;
+    height: 550px;
+    padding-top: 20px;
+    /* width: 50%; */
+}
+
+h2{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 15px;
+}
+
+.form{
+    max-width: 30%;
+    margin: 25px auto;
+}
+
+.form-input{
+    margin: 17px 0;
+    padding: 7px 5px;
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid #fbf8ed;
+    border-radius: 6px;
+}
+
+.last-btn{
+    padding: 12px 20px;
+    border-radius: 7px;
+    border: 2px solid #fbf8ed;
+    font-size: 20px;
+}
+
+.text-center{
+    text-align: center;
+    padding: 40px 0 10px;
+    font-size: 20px;
+}
+
+.burger{
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    top: 20px;
+    right: 3%;
+}
+
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px;
+}
+
+@media only screen and (max-width: 1260px){
+    .nav-list{
+        flex-direction: column;
+    }
+
+    .navbar{
+        flex-direction: column;
+        height: 535px;
+        transition: all 0.7s ease-out;
+    }
+
+    .firstSection{
+        height: 100%;
+    }
+
+    .rightNav{
+        text-align: center;
+    }
+
+    #search{
+        width: 100%;
+        height: 25px;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .h-nav-resp{
+        height: 72px;
+    }
+
+    .v-class-resp{
+        opacity: 0;
+    }
+
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+
+    .secLeft{
+        flex-direction: column-reverse;
+    }
+
+    .secRight{
+        flex-direction: column-reverse;
+    }
+
+    .big-text{
+        text-align: left;
+    }
+
+    .small-text{
+        text-align: left;
+    }
+
+    .btns{
+        text-align: center;
+    }
+
+    .para{
+        padding: 1px;
+    }
+    
+}
+
