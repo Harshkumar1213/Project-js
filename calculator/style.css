@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn{
+    padding: 20px;
+    background-color: grey;
+    font-size: 20px;
+    margin: 3px;
+    border: 2px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#zero{ 
+    padding: 20px 50px;
+}
+
+.row .input{
+    padding: 8px 15px;
+    font-size: 18px;
+    margin: 10px 0 3px 0;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
