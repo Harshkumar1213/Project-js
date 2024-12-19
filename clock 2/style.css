@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.clock{
+    border: 5px solid rgb(4, 4, 4);
+    border-radius: 50%;
+    margin: auto;
+    height: 40vw;
+    width: 40vw;
+    background: url(clock2.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+    margin-top: 10px;
+}
+
+#h-mine{
+    position: absolute; 
+    background: #060606;
+    border-radius: 10px;
+    width: 1.7%;
+    height: 7%;
+    top: 50%;
+    left: 49.1%;
+    transform-origin: top;
+    /* display: none; */
+}
+
+#m-mine{
+    position: absolute; 
+    background: #060606;
+    border-radius: 10px;
+    width: 1%;
+    height: 9%;
+    top: 49.7%;
+    left: 49.4%;
+    transform-origin: top;
+    /* display: none; */
+}
+
+#s-mine{
+    position: absolute; 
+    background: #060606;
+    border-radius: 10px;
+    width: 0.5%;
+    height: 12%;
+    top: 49.7%;
+    left: 49.6%;
+    transform-origin: top;
+}
+
+#hour{
+    position: absolute; 
+    background: #060606;
+    border-radius: 10px;
+    width: 1.7%;
+    height: 25%;
+    top: 24.7%;
+    left: 49.1%;
+    transform-origin: bottom;
+    /* display: none; */
+}
+
+#minute{
+    position: absolute;
+    background: #060606;
+    border-radius: 10px;
+    top: 19.6%;
+    left: 49.4%;
+    height: 30%;
+    width: 1%;
+    transform-origin: bottom;
+    /* display: none; */
+}
+
+#second{
+    position: absolute;
+    background: #060606;
+    border-radius: 10px;
+    width: 0.5%;
+    height: 34%;
+    top: 15.6%;
+    left: 49.5%; 
+    transform-origin: bottom;
+    /* display: none; */
+}
