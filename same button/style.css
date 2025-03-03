@@ -12,7 +12,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(26, 172, 172);
+    background-color: rgb(26, 172, 172); 
 }
 
 #card{
@@ -34,8 +34,8 @@ body{
 }
 
 #card h1{
-    font-size: 35px;
-    margin: 10px 0;
+    font-size: 26px;
+    padding-right: 60%;
 }
 
 #card h5{
@@ -52,10 +52,36 @@ body{
     border-radius: 20px;
     border: none;
     cursor: pointer;
+    /* position: absolute;
+    top: 80%;
+    left: 9%; */
 }
 
-#card i{
-    color: #fff;
+#like{
+    font-size: 25px;
+    position: absolute;
+    top: 65%;
+    left: 7%;
+    cursor: pointer;
+}
+
+#comit{
+    font-size: 25px;
+    position: absolute;
+    top: 65%;
+    left: 15%;
+    cursor: pointer;
+}
+
+#share{
+    font-size: 25px;
+    position: absolute;
+    top: 65%;
+    left: 23%;
+    cursor: pointer;
+}
+#love{
+    color: #e97c7c;
     font-size: 75px;
     position: absolute;
     top: 30%;

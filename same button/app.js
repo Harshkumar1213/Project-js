@@ -1,7 +1,8 @@
 let istatus = document.querySelector("h5");
 let add = document.querySelector("#add");
 let image = document.querySelector("img");
-let icon = document.querySelector("i");
+let icon = document.querySelector("#love");
+let like = document.querySelector("#like");
 
 let check = 0
 
@@ -11,7 +12,7 @@ add.addEventListener("click", function(){
         istatus.style.color = "lightgreen";
         istatus.style.fontWeight = "700";
         add.innerHTML = "Remove Friend"
-        add.style.backgroundColor = "red"
+        add.style.backgroundColor = "red";
         check = 1
     } else{
         istatus.innerHTML = "Stranger"
@@ -32,4 +33,20 @@ image.addEventListener("dblclick", function (){
         icon.style.transform = 'translate(-50%, -50%) scale(0)';
     }, 1500);
 
+});
+
+let likes = 0
+like.addEventListener("click", function(){
+   setTimeout(function(){
+    if(likes == 0){
+        like.style.color = "red"
+        likes = 1;
+      } 
+   },1000)
+   setTimeout(function(){
+    if(likes = 1){
+        like.style.color = "black"
+        likes = 0
+       }
+   },1500)
 })

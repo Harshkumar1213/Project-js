@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.nav{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(66, 229, 247);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+}
+
+.nav h2{
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.nav h4{
+    margin-top: 1vw;
+    font-size: 1.3vw;
+}
+
+.nav1{
+    display: flex;
+    gap: 4vw;
+}
+
+.nav1 button{
+    font-size: 1.1vw;
+    padding: 0.8vw 1.5vw;
+    color: rgb(243, 243, 211);
+    background-color: rgb(196, 194, 194);
+    border: none;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+/* use calc() for fixed height */
+
+.content{
+    width: 100%;
+    display: flex;
+    height: calc(100% - 100px);
+    position: relative;
+    background-color: aliceblue;
+}
+
+.left{
+    height: 100%;
+    width: 55%;
+    padding: 5vw 4vw;
+}
+
+.left h1{
+    font-size: 4.2vw;
+}
+
+.left h1 span{
+    color: rgb(66, 229, 247);
+}
+
+.left p{
+    font-size: 1.5vw;
+    font-weight: bold;
+    width: 80%;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+}
+
+button{
+    font-size: 1.3vw;
+    padding: 1vw 2vw;
+    color: #fff;
+    background-color: rgb(66, 229, 247);
+    border: none;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.right{
+    height: 100%;
+    width: 45%;
+}
+
+.right img{
+    height: 85%;
+    width: 95%;
+    margin-top: 2vw;
+}
+
+.nav i{
+    display: none;
+}
+
+@media (max-width: 650px){
+    .nav{
+        height: 70px;
+        padding: 0 4vw;
+    }
+
+    .nav button{
+        display: none;
+    }
+
+    .nav h2{
+        font-size: 6vw;
+    }
+
+    .nav h4{
+        font-size: 3vw;
+        display: none;
+    }
+
+    .nav i{
+        font-size: 5vw;
+        display: block;
+    }
+
+    .content{
+        height: calc(100%-70px);
+        flex-direction: column;
+    }
+
+    .content button{
+        font-size: 2.5vw;
+        border-radius: 5px;
+        padding: 2vw 3vw;
+        font-weight: 700;
+    }
+
+    .left{
+        width: 100%;
+        height: 100%;
+        padding: 4vw;
+    }
+
+    .left h1{
+        font-size: 7.5vw;
+    }
+
+    .left p{
+        font-size: 2.5vw;
+        width: 100%;
+    }
+
+    .right{
+        width: 100%;
+        height: 50%;
+    }
+}

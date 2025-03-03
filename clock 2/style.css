@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body{
+    background-color: rgb(139, 245, 245);
+}
+
 .clock{
     border: 5px solid rgb(4, 4, 4);
     border-radius: 50%;
@@ -13,6 +17,7 @@
     background-size: 100%;
     position: relative;
     margin-top: 10px;
+    background-color: rgb(162, 244, 217);
 }
 
 #h-mine{
@@ -85,3 +90,26 @@
     transform-origin: bottom;
     /* display: none; */
 }
+
+.time{
+    position: absolute;
+    font-size: 100%;
+    border: 2px solid rgb(166, 116, 246);
+    background-color: cornflowerblue;
+    top: 105%;
+    left: 35%;
+}
+
+
+
+
+
+/* @media only screen and (max-width: 1240px){
+    .time{
+    font-size: 40px;
+    border: 2px solid rgb(166, 116, 246);
+    background-color: cornflowerblue;
+    top: 105%;
+    left: 35%;
+    }
+} */

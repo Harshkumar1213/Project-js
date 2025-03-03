@@ -11,20 +11,14 @@ setInterval (() =>{
     hour.style.transform = `rotate(${hRotation}deg)`
     minute.style.transform = `rotate(${mRotation}deg)`
     second.style.transform = `rotate(${sRotation}deg)`
-}, 1000);
 
-
-
-
-setInterval (() =>{
     let Hmine = document.querySelector("#h-mine")
     let Mmine = document.querySelector("#m-mine")
     let Smine = document.querySelector("#s-mine")
 
-    D = new Date();
-    hMineTime = D.getHours();
-    mMineTime = D.getMinutes();
-    sMineTime = D.getSeconds();
+    hMineTime = d.getHours();
+    mMineTime = d.getMinutes();
+    sMineTime = d.getSeconds();
 
     hRotation = 30*hMineTime + mMineTime/2;
     mRotation = 6*mMineTime;
@@ -33,4 +27,12 @@ setInterval (() =>{
     Hmine.style.transform = `rotate(${hRotation}deg)`
     Mmine.style.transform = `rotate(${mRotation}deg)`
     Smine.style.transform = `rotate(${sRotation}deg)`
+
+    let time = document.querySelector(".time")
+    let times = new Date();
+    let HH = times.getHours();
+    let MM = times.getMinutes();
+    let SS = times.getSeconds();
+    time.innerHTML = `${HH} : ${MM} : ${SS}`
+
 }, 1000);

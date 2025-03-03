@@ -1,0 +1,371 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+body {
+  background-color: #131317;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #131317;
+  width: 100%;
+  border-bottom: 0.2rem solid #ffc107;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.nav-img h2 {
+  margin: 0.2rem 1.5rem;
+  width: 25%;
+  color: rgb(254, 174, 55);
+  font-size: 2.5vmax;
+  font-weight: 300;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  /* text-shadow: 0.2rem 0.2em 0.1rem #fff; */
+}
+
+.nav-img h2:hover {
+  text-shadow: 0.2rem 0.2em 0.9rem #fba022;
+}
+
+.nav-sec {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  position: relative;
+  right: 0%;
+}
+
+a {
+  font-size: 2.5vmin;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+a:hover {
+  color: rgb(254, 174, 55);
+}
+
+.nav-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.search i {
+  margin: 0.2rem 1rem;
+  color: #fff;
+  font-size: 3vmin;
+}
+
+.search i:hover {
+  color: rgb(198, 196, 193);
+}
+
+.menu i {
+  display: none;
+  margin: 0.2rem 1rem;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.menu i:hover {
+  color: rgb(198, 196, 193);
+}
+
+.input {
+  position: absolute;
+  top: 6rem;
+  right: 3rem;
+  border-radius: 15px;
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  background-color: gainsboro;
+  display: none;
+}
+
+ .input.active{
+  display: block;
+}
+
+.input input {
+  font-size: 1.5rem;
+  all: unset;
+  width: 25vmin;
+  margin: 0.5rem;
+}
+
+.nav-icons .input i {
+  color: #131317;
+  font-size: 1.5rem;
+  margin: 0.5rem 1rem;
+}
+
+.nav-icons .input i:hover {
+  color: rgb(254, 174, 55);
+}
+
+/* main */
+main {
+  height: 100vh;
+  width: 100%;
+}
+
+img {
+  margin-top: 5.3rem;
+  width: 98.9vmax;
+  object-fit: cover;
+}
+
+.main-text {
+  height: calc(100vh - 80vh);
+  margin: 3rem;
+  text-align: center;
+}
+
+.main-text h3 {
+  color: #fff;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.main-text h3 span {
+  color: rgb(254, 174, 55);
+}
+
+.main-text p {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* main-cads */
+.exercise {
+  height: calc(80vh - 20vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.fitness-cart img {
+  width: 180px;
+  margin: 1rem;
+}
+
+.fitness-cart h3 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+.fitness-cart {
+  /* flex-basis: 30%;  */
+  height: 300px;
+  width: 250px;
+}
+
+.fitness-cart:hover {
+  box-shadow: 0.1rem 0.1rem 1rem rgb(254, 174, 55);
+}
+
+/* footer */
+.footer-options {
+  display: flex;
+  height: calc(20vh - 15vh);
+  border-top: 0.2rem solid #ffc107;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.options {
+  margin-top: 2rem;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.options h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 0.5rem;
+}
+
+.options h3:hover {
+  color: #ffc107;
+}
+
+.address {
+  width: 40%;
+}
+
+.address h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.address p {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.address i {
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.footer-text h3 {
+  margin: 2.5rem 1rem 0rem 1rem;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.footer-text p {
+  margin: 0rem 1rem 0.5rem 1rem;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.footer-text img {
+  margin: 1rem;
+  all: unset;
+  width: 5%;
+}
+
+@media only screen and (max-width: 750px) {
+  .nav-img h2 {
+    width: 10svw;
+    font-size: 2.5vmax;
+    font-weight: 400;
+  }
+
+  .nav-sec{
+    display: none;
+  }
+
+  .nav-sec.active{
+    background-color: #a4a4a7;
+    opacity: 0.9;
+    height: 10rem;
+    width: 15rem;
+    position: fixed;
+    top: 5rem;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+  
+   a{
+    color: #000;
+    margin: 0.2rem;
+    font-size: 2vmin;
+    opacity: 1;
+    text-decoration: underline;
+  }
+
+  .search i {
+    font-size: 1.5rem;
+  }
+
+  .menu i {
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  .nav-icons .input {
+    right: 6rem;
+    width: 50%;
+  }
+
+  main {
+    height: 60vmin;
+  }
+
+  main img {
+    width: 100vmin;
+  }
+
+  .main-text h3 {
+    font-size: 3.5vmin;
+    color: #fff;
+  }
+
+  .main-text p {
+    font-size: 2.3vmin;
+  }
+
+  .exercise {
+    /* display: grid;
+    grid-template-rows: calc(3); */
+    height: 50vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .fitness-cart {
+    height: 40vmin;
+  }
+
+  .fitness-cart img {
+    width: 25vmin;
+  }
+
+  .fitness-cart h3 {
+    font-size: 2vmin;
+  }
+
+  .footer-options {
+    height: 20vmax;
+  }
+
+  .options h3 {
+    font-size: 2vmin;
+  }
+
+  .address h3 {
+    margin-top: 1vmin;
+    font-size: 2.5vmin;
+  }
+
+  .address p {
+    margin-top: 1vmin;
+    font-size: 2vmin;
+  }
+
+  .footer-text h3 {
+    font-size: 2.5vmin;
+  }
+
+  .footer-text p {
+    font-size: 2vmin;
+  }
+
+  .footer-text img {
+    margin: 1vmin;
+  }
+}

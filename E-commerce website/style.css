@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto' , sans-serif;
+}
+
+body{
+    background-color: #eeee;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #eeee;
+    padding: 22px;
+    /* position: sticky;
+    top: 0; */
+    background-color: rgb(252, 253, 253);
+    box-shadow: 0px 1.7px 1.7px 1.7px rgb(213, 212, 212);
+}
+
+nav .logo{
+    font-size: 21px;
+    margin-left: 22px;
+}
+
+ul{
+    margin-right: 20px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+ul li a{
+    margin: 22px;
+    font-size: 21px;
+}
+
+ul li i{
+    font-size: 20px;
+}
+
+li #home{
+    color: rgb(80, 186, 186);
+}
+
+ul li i:hover{
+    color: grey;
+    cursor: pointer;
+}
+
+ul li a:hover{
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+.mainText h2{
+    font-size: 27px;
+}
+
+.main .mainText{
+    margin: 100px 0 0 100px;
+}
+
+.mainText h1{
+    font-size: 64px;
+}
+
+.mainText .top{
+    font-size: 64px;
+    color: rgb(80, 186, 186);
+}
+
+.mainText p{
+    margin-right: 80px;
+    margin-top: 10px;
+    font-family: 'Roboto' , sans-serif;
+    line-height: 22px;
+}
+
+.mainText button{
+    width: 15vh;
+    height: 5vh;
+    background-color:rgb(80, 186, 186);
+    color: #fff;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.mainText button:hover{
+    background-color: transparent;
+    border: 2px solid rgb(80, 186, 186);
+    border-radius: 10px;
+    color: #000;
+    cursor: pointer;
+}
+
+.main img{
+    display: flex;
+    mix-blend-mode: darken;
+    height: 600px;
+    width: 650px;
+    margin-top: 2%;
+}
+
+.head h1{
+    text-align: center;
+    padding: 33px;
+    margin-top: 20px;
+}
+
+.head span{
+    color: rgb(80, 186, 186);
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.crd #mimg{
+    height: 70%;
+    width: 80%;
+    mix-blend-mode: darken;
+}
+
+.crd #grimg{
+    height: 85%;
+    width: 80%;
+    mix-blend-mode: darken;
+}
+
+.card .crd{
+    width: 400px;
+    height: 600px;
+    background-color: #ece7e7;
+    margin: 11px;
+    padding: 10px;
+    border: 2px solid rgb(80, 186, 186);
+    border-radius: 35px;
+}
+
+.cardText{
+    margin-left: 16px;    
+}
+
+.crdText button{
+    width: 14vh;
+    height: 4vh;
+    border: none;
+    background-color: rgb(80, 186, 186);
+    color: #fff;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.crdText button:hover{
+    border: 2px solid rgb(80, 186, 186);
+    background-color: #fff;
+    color: #000;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.crdText i{
+    color: rgb(227, 166, 68);
+}
+
+.aboutus{
+    background-color: rgb(80, 186, 186);
+    color: #fff;
+    padding: 26px;
+    font-size: 20px;
+}
+
+.aboutme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 400px;
+    padding: 13px;
+    margin-left: 26%;
+    background-color: rgb(173, 183, 246);
+    border-radius: 30px;
+    border: 3px solid rgb(80, 186, 186);
+    margin-top: 15px;
+}
+
+.aboutme img{
+    width: 100%;
+    /* height: 90%; */
+    mix-blend-mode: multiply;
+}
+
+.aboutText h1{
+    text-align: center;
+}
+
+.aboutText p{
+    text-align: center;
+    line-height: 20px;
+}
+
+.about{
+    display: none;
+}
+
+.contactus{
+    background-color: rgb(112, 130, 247);
+    font-size: 19px;
+    color: #fff;
+    padding: 35px;
+}
+
+.contactus p{
+    margin-top: 10px;
+}
+
+.contactme{
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    width: 1000px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 21px;
+    background-color: aliceblue;
+}
+
+.contactText p{
+    margin-top: 30px;
+    line-height: 20px;
+    font-size: 20px;
+}
+
+.contactme img{
+    margin-left: 9px;
+    border: 2px solid rgb(82, 218, 213);
+}
+
+.contact{
+    display: none;
+}
+
+.form{
+    text-align: center;
+    margin-top: 40px;
+    height: 500px;
+}
+
+.form input{
+    margin-top: 30px;
+    padding: 10px;
+    width: 30%;
+    height: 5%;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.form button{
+    margin-top: 30px;
+    padding: 10px;
+    width: 31%;
+    height: 10%;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: rgb(80, 186, 186);
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.blog{
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    height: 500px;
+    background-color: #ece7e7;
+    margin: 33px;
+    border-radius: 11px;
+    border: 2px solid rgb(80, 186, 186);
+}
+
+.blog:hover{
+    transition: 0.6s ease;
+    width: 610px;
+    height: 510px;
+}
+
+.blog img{
+    padding: 20px;
+    width: 80%;
+    height: 80%;
+    padding-top: 50px;
+}
+
+.blogText{
+    padding: 12px;
+    margin-top: 50px;
+}
+
+.blogText a{
+    width: 13vh;
+    height: 8vh;
+    padding: 4px;
+    background-color: rgb(80, 186, 186);
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    top: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.letter{
+    background-color: rgb(80, 99, 220);
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 8.5px 3px 8.5px 3px;
+}
+
+.inp{
+    display: flex;
+}
+
+.inp input{
+    width: 330px;
+    height: 27px;
+    border-radius: 15px;
+    outline: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.inp button{
+    width: 30%;
+    height: 70%;
+    font-size: 18px;
+    background-color: rgb(80, 186, 186);
+    color: #fff;
+    padding: 2px;
+    border-radius: 20px;
+    border: none;
+}
+
+.letter{
+    box-shadow: 0px 10px 10px 0px rgb(123, 121, 121);
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    width: 92.2%;
+    padding: 60px;
+    background-color: rgb(112, 130, 247);
+    margin-top: 10px;
+}
+
+.footer .footerText{
+    margin-inline: 80px;
+}
+
+.footerText h3{
+    color: rgb(104, 239, 239);
+}
+
+.footerText p{
+    margin-top: 30px;
+
+}
+
+.footerText h3{
+    font-size: 30px;
+}
+
+.cart{
+    justify-content: center;
+    display: none;
+    margin-top: 80px;
+}
+
+.cartText{
+    padding: 22px;
+    margin-top: 22px;
+}
+
+.cartText p{
+    margin-top: 12px;
+}
+
+.cartText h2{
+    margin-top: 11px;
+}
+
+.cartText .btn button{
+    width: 140px;
+    height: 40px;
+    background: orange;
+    border: none;
+    font-size: 22px;
+    margin-inline: 11px;
+    margin-top: 22px;
+    border-radius: 15px;
+    color: #fff;
+
+}
+
+.cartText .back{
+    width: 140px;
+    height: 40px;
+    background: rgb(80, 186, 186);
+    border: none;
+    font-size: 22px;
+    margin-inline: 11px;
+    margin-top: 22px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.cart img{
+    border-radius: 20px;
+    height: 400px;
+    width: 400px;
+    mix-blend-mode: darken;
+    margin-top: 40px;
+}
